@@ -40,3 +40,22 @@ Cliente *ClienteDao::retrieve(int clienteId)
 
   return NULL;
 }
+
+bool ClienteDao::delete_(Cliente& cliente)
+{
+  for (int i = 0; i < MAX_CLIENTES; i++)
+  {
+    if (this->clientes[i]->id = cliente.id)
+    {
+      delete clientes[i];
+      for (int j = i; j < MAX_CLIENTES - 1; j++)
+      {
+        this->clientes[j] = this->clientes[j + 1];
+      }
+      this->clientesCount -= 1;
+      return true;
+    }
+    return false;
+  }
+  
+}
