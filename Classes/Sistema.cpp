@@ -2,17 +2,15 @@
 
 bool Sistema::cadastrarCliente(Cliente &cliente)
 {
-  return this->clienteDao->create(cliente);
+  return mgrCliente1->cadastrar(cliente);
 }
 
 bool Sistema::atualizarCliente(Cliente &cliente)
 {
-  return this->clienteDao->update(cliente);
+  return mgrCliente1->atualizar(cliente);
 }
 
-Cliente *Sistema::pesquisarCliente(int clienteId)
+Cliente *Sistema::pesquisarCliente(string Nome)
 {
-  ClienteDao *clienteDao1 = new ClienteDao();
-
-  return this->clienteDao->retrieve(clienteId);
+  return mgrCliente1->pesquisar(Nome);
 }

@@ -1,14 +1,14 @@
 #pragma once
 
-#include "Cliente.h"
-#include "../Daos/ClienteDao.h"
+#include "../Mgrs/MgrCliente.h"
 
 class Sistema
 {
-  ClienteDao *clienteDao = new ClienteDao();
+  // Criamos managers por questões de responsabilidade
 
+  MgrCliente *mgrCliente1 = new MgrCliente();
 public:
   bool cadastrarCliente(Cliente &);
   bool atualizarCliente(Cliente &);
-  Cliente *pesquisarCliente(int);
+  Cliente *pesquisarCliente(string);
 };
