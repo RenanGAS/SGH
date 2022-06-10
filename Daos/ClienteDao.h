@@ -13,7 +13,7 @@ class ClienteDao
 
 public:
     bool create(Cliente &);
-    Cliente *retrieve(int);
+    Cliente *retrieve(string);
     bool update(Cliente &);
     bool delete_(Cliente &);
 };

@@ -14,7 +14,7 @@ bool ClienteDao::create(Cliente &cliente)
 
 bool ClienteDao::update(Cliente &cliente)
 {
-  Cliente *cliente1 = retrieve(cliente.id);
+  Cliente *cliente1 = retrieve(cliente.cpf);
 
   if (cliente1 == NULL)
   {
@@ -28,11 +28,11 @@ bool ClienteDao::update(Cliente &cliente)
   return true;
 }
 
-Cliente *ClienteDao::retrieve(int clienteId)
+Cliente *ClienteDao::retrieve(string clienteCpf)
 {
   for (int i = 0; i < this->clientesCount; i++)
   {
-    if (this->clientes[i]->id == clienteId)
+    if (this->clientes[i]->cpf == clienteCpf)
     {
       return this->clientes[i];
     }
@@ -57,5 +57,5 @@ bool ClienteDao::delete_(Cliente& cliente)
     }
     return false;
   }
-  
+  return false;
 }
