@@ -9,31 +9,32 @@ int main()
 {
   Sistema *sys1 = new Sistema();
 
-  Cliente *c1 = new Cliente();
+  Cliente *c1 = sys1->pesquisarCliente("037.827.221-75");
 
-  c1->nome = "Renan";
-  c1->id = idGeneratorWrapper(c1->nome);
-  c1->cpf = "037.827.221-75";
-  c1->tel = "(44) 9 9112-8875";
-
-  if (sys1->cadastrarCliente(*c1))
-  {
-    cout << "\nCliente cadastrado com sucesso!\n";
-  }
-  else
-  {
-    cout << "\nErro: falha ao cadastrar o Cliente.\n";
-  }
-
-  c1 = sys1->pesquisarCliente(c1->id);
-
-  if (c1 != NULL)
-  {
-    cout << "\nID: " << c1->id << "\nNome: " << c1->nome << "\nCPF: " << c1->cpf << "\nTelefone: " << c1->tel << "\n";
-  }
-  else
+  if (c1 == NULL)
   {
     cout << "\nErro: falha ao pesquisar o Cliente.\n";
+
+    c1 = new Cliente();
+    c1->nome = "Renan";
+    c1->id = idGeneratorWrapper(c1->nome);
+    c1->cpf = "037.827.221-75";
+    c1->tel = "(44) 9 9112-8875";
+
+    if (sys1->cadastrarCliente(*c1))
+    {
+      cout << "\nCliente cadastrado com sucesso!\n";
+    }
+    else
+    {
+      cout << "\nErro: falha ao cadastrar o Cliente.\n";
+    }
+  }
+  else
+  {
+    Cliente *c = sys1->pesquisarCliente(c1->cpf);
+
+    cout << "\nID: " << c->id << "\nNome: " << c->nome << "\nCPF: " << c->cpf << "\nTelefone: " << c->tel << "\n";
   }
 
   c1->tel = "(44) 9 9113-8876";
