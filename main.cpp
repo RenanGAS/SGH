@@ -22,14 +22,16 @@ int main()
     cout << "\nErro: falha ao pesquisar o Cliente.\n";
 
     c1 = new Cliente();
-    c1->nome = "Renan";
-    c1->id = idGeneratorWrapper(c1->nome);
-    c1->cpf = "037.827.221-75";
-    c1->tel = "(44) 9 9112-8875";
+    c1->setNome("Renan");
+    c1->setID(idGeneratorWrapper(c1->getNome()));
+    c1->setCpf("037.827.221-75");
+    c1->setTel("(44) 9 9112-8875");
 
     if (sys1->cadastrarCliente(*c1))
     {
       cout << "\nCliente cadastrado com sucesso!\n";
+
+      cout << "\nID: " << c1->getID() << "\nNome: " << c1->getNome() << "\nCPF: " << c1->getCpf() << "\nTelefone: " << c1->getTel() << "\n";
     }
     else
     {
@@ -38,17 +40,17 @@ int main()
   }
   else
   {
-    Cliente *c = sys1->pesquisarCliente(c1->cpf);
+    Cliente *c = sys1->pesquisarCliente(c1->getCpf());
 
-    cout << "\nID: " << c->id << "\nNome: " << c->nome << "\nCPF: " << c->cpf << "\nTelefone: " << c->tel << "\n";
+    cout << "\nID: " << c->getID() << "\nNome: " << c->getNome() << "\nCPF: " << c->getCpf() << "\nTelefone: " << c->getTel() << "\n";
   }
 
-  c1->tel = "(44) 9 9113-8876";
+  c1->setTel("(44) 9 9113-8876");
 
   if (sys1->atualizarCliente(*c1))
   {
     cout << "\nCliente atualizado com sucesso!\n";
-    cout << "\nID: " << c1->id << "\nNome: " << c1->nome << "\nCPF: " << c1->cpf << "\nTelefone: " << c1->tel << "\n";
+    cout << "\nID: " << c1->getID() << "\nNome: " << c1->getNome() << "\nCPF: " << c1->getCpf() << "\nTelefone: " << c1->getTel() << "\n";
   }
   else
   {
