@@ -14,16 +14,16 @@ bool QuartoDao::create(Quarto &quarto)
 
 bool QuartoDao::update(Quarto &quarto)
 {
-  Quarto *quarto1 = retrieve(quarto.numero);
+  Quarto *quarto1 = retrieve(quarto.getNumero());
 
   if (quarto1 == NULL)
   {
     return false;
   }
 
-  quarto1->numero = quarto.numero;
-  quarto1->especificacao = quarto.especificacao;
-  quarto1->status = quarto.status;
+  quarto1->setNumero(quarto.getNumero());
+  quarto1->setEspecificacao(quarto.getEspecificacao());
+  quarto1->setStatus(quarto.getStatus());
 
   return true;
 }
@@ -32,7 +32,7 @@ Quarto *QuartoDao::retrieve(int quartoNumero)
 {
   for (int i = 0; i < this->quartosCount; i++)
   {
-    if (this->quartos[i]->numero == quartoNumero)
+    if (this->quartos[i]->getNumero() == quartoNumero)
     {
       return this->quartos[i];
     }
@@ -45,7 +45,7 @@ bool QuartoDao::delete_(Quarto& quarto)
 {
   for (int i = 0; i < MAX_QUARTOS; i++)
   {
-    if (this->quartos[i]->id = quarto.id)
+    if (this->quartos[i]->getID() == quarto.getID())
     {
       delete quartos[i];
       for (int j = i; j < MAX_QUARTOS - 1; j++)
@@ -58,4 +58,9 @@ bool QuartoDao::delete_(Quarto& quarto)
     return false;
   }
   return false;
+}
+
+Quarto **QuartoDao::list()
+{
+  return this->quartos;
 }

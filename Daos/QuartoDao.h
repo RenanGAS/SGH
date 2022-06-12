@@ -16,4 +16,5 @@ public:
     Quarto *retrieve(int);
     bool update(Quarto &);
     bool delete_(Quarto &);
+    Quarto **list();
 };
