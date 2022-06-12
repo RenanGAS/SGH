@@ -7,9 +7,23 @@ using namespace std;
 
 class Quarto
 {
-public: // Fazer getters/setters
-    int id;
-    int numero;
-    string especificacao;
-    string status;
+    int ID;
+    int Numero;
+    string Especificacao;
+    string Status;
+
+public:
+    int getID();
+    void setID(int);
+
+    int getNumero();
+    void setNumero(int);
+
+    string getEspecificacao();
+    void setEspecificacao(string);
+
+    string getStatus();
+    void setStatus(string);
+
+    string toStringQuarto();
 };
