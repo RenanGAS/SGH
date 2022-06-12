@@ -11,4 +11,5 @@ public:
     bool cadastrar(Quarto &);
     bool atualizar(Quarto &);
     Quarto *pesquisar(int);
+    void listar();
 };
