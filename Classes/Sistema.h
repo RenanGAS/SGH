@@ -18,4 +18,5 @@ public:
   bool cadastrarQuarto(Quarto &);
   bool atualizarQuarto(Quarto &);
   Quarto *pesquisarQuarto(int);
+  void listarQuartos();
 };

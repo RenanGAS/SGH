@@ -38,3 +38,8 @@ Quarto *Sistema::pesquisarQuarto(int numero)
 {
   return mgrQuarto1->pesquisar(numero);
 }
+
+void Sistema::listarQuartos()
+{
+  mgrQuarto1->listar();
+}

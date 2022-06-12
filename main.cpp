@@ -10,6 +10,7 @@ int main()
 {
   Sistema *sys1 = new Sistema();
 
+
   //-----------------------------------------------------
   //--------------- TESTE CLIENTE -----------------------
   //-----------------------------------------------------
@@ -72,17 +73,17 @@ int main()
   {
     cout << "\nErro: falha ao cadastrar o Cliente.\n";
   }
-  
+
 
   //-----------------------------------------------------
   //--------------- TESTE QUARTO ------------------------
   //-----------------------------------------------------
 
   Quarto *n0 = new Quarto();
-  n0->id = idGeneratorWrapper("numero 0");
-  n0->numero = 0;
-  n0->especificacao = "Cama de casal, TV a cabo, Frigobar";
-  n0->status = "Livre";
+  n0->setID(idGeneratorWrapper("numero 0"));
+  n0->setNumero(0);
+  n0->setEspecificacao("Cama de casal, TV a cabo, Frigobar");
+  n0->setStatus("Livre");
 
   if (sys1->cadastrarQuarto(*n0))
   {
@@ -93,7 +94,7 @@ int main()
     cout << "\nErro: falha ao cadastrar o Quarto.\n";
   }
 
-  Quarto *q = sys1->pesquisarQuarto(n0->numero);
+  Quarto *q = sys1->pesquisarQuarto(n0->getNumero());
 
   if (q == NULL)
   {
@@ -101,19 +102,36 @@ int main()
   }
   else
   {
-    cout << "\nID: " << q->id << "\nNumero: " << q->numero << "\nEspecificacao: " << q->especificacao << "\nStatus: " << q->status << "\n";
+    sys1->listarQuartos();
   }
 
-  n0->status = "Em limpeza";
+  n0->setStatus("Em limpeza");
 
   if (sys1->atualizarQuarto(*n0))
   {
     cout << "\nQuarto atualizado com sucesso!\n";
-    cout << "\nID: " << q->id << "\nNumero: " << q->numero << "\nEspecificacao: " << q->especificacao << "\nStatus: " << q->status << "\n";
+    sys1->listarQuartos();
   }
   else
   {
     cout << "\nErro: falha ao atualizar o Quarto.\n";
+  }
+
+  Quarto *n1 = new Quarto();
+  n1->setID(idGeneratorWrapper("numero 1"));
+  n1->setNumero(1);
+  n1->setEspecificacao("Cama de casal, TV a cabo, Frigobar");
+  n1->setStatus("Livre");
+
+  if (sys1->cadastrarQuarto(*n1))
+  {
+    cout << "\nQuarto cadastrado com sucesso!\n";
+
+    sys1->listarQuartos();
+  }
+  else
+  {
+    cout << "\nErro: falha ao cadastrar o Quarto.\n";
   }
 
   return 0;
