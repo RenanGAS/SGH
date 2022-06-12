@@ -17,6 +17,10 @@ Cliente *Sistema::pesquisarCliente(string Nome)
   return mgrCliente1->pesquisar(Nome);
 }
 
+void Sistema::listarClientes()
+{
+  mgrCliente1->listar();
+}
 
 // Quarto
 

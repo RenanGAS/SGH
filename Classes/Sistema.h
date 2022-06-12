@@ -13,6 +13,7 @@ public:
   bool cadastrarCliente(Cliente &);
   bool atualizarCliente(Cliente &);
   Cliente *pesquisarCliente(string);
+  void listarClientes();
 
   bool cadastrarQuarto(Quarto &);
   bool atualizarQuarto(Quarto &);
