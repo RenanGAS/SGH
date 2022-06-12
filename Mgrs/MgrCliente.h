@@ -2,6 +2,8 @@
 
 #include "../Classes/Cliente.h"
 #include "../Daos/ClienteDao.h"
+#include <iostream>
+using namespace std;
 
 
 class MgrCliente
@@ -11,4 +13,5 @@ public:
     bool cadastrar(Cliente &);
     bool atualizar(Cliente &);
     Cliente *pesquisar(string);
+    void listar();
 };

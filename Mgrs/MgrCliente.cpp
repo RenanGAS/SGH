@@ -14,3 +14,16 @@ Cliente *MgrCliente::pesquisar(string Nome)
 {
     return this->clienteDao->retrieve(Nome);
 }
+
+void MgrCliente::listar()
+{
+    for (int i = MAX_CLIENTES - 1; i >= 0; i--)
+    {
+        Cliente **clientes = this->clienteDao->list();
+
+        if (clientes[i] != NULL)
+        {
+            cout << clientes[i]->toStringCliente();
+        }
+    }
+}
