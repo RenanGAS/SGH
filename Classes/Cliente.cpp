@@ -36,12 +36,7 @@ void Cliente::setTel(string newTel)
     this->Telefone = newTel;
 }
 
-static string intToString(int integer)
-{
-    return to_string(integer);
-}
-
 string Cliente::toStringCliente()
 {
-    return "\nID: "+ intToString(this->ID) + "\nNome: " + this->Nome + "\nCPF: " + this->CPF + "\nTelefone: " + this->Telefone + "\n";
+    return "\nID: "+ to_string(this->ID) + "\nNome: " + this->Nome + "\nCPF: " + this->CPF + "\nTelefone: " + this->Telefone + "\n";
 }
