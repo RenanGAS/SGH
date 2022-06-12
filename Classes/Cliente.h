@@ -25,4 +25,6 @@ public:
 
     string getTel();
     void setTel(string);
+
+    string toStringCliente();
 };
