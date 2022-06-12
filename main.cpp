@@ -1,5 +1,6 @@
 #include "./Classes/Sistema.h"
 #include "./Classes/Cliente.h"
+#include "./Classes/Quarto.h"
 #include "./Tools/generators.h"
 
 #include <iostream>
@@ -8,6 +9,11 @@ using namespace std;
 int main()
 {
   Sistema *sys1 = new Sistema();
+  
+
+  //-----------------------------------------------------
+  //--------------- TESTE CLIENTE -----------------------
+  //-----------------------------------------------------
 
   Cliente *c1 = sys1->pesquisarCliente("037.827.221-75");
 
@@ -47,6 +53,49 @@ int main()
   else
   {
     cout << "\nErro: falha ao atualizar o Cliente.\n";
+  }
+
+
+  //-----------------------------------------------------
+  //--------------- TESTE QUARTO ------------------------
+  //-----------------------------------------------------
+
+  Quarto *n0 = new Quarto();
+  n0->id = idGeneratorWrapper("numero 0");
+  n0->numero = 0;
+  n0->especificacao = "Cama de casal, TV a cabo, Frigobar";
+  n0->status = "Livre";
+
+  if (sys1->cadastrarQuarto(*n0))
+  {
+    cout << "\nQuarto cadastrado com sucesso!\n";
+  }
+  else
+  {
+    cout << "\nErro: falha ao cadastrar o Quarto.\n";
+  }
+
+  Quarto *q = sys1->pesquisarQuarto(n0->numero);
+
+  if (q == NULL)
+  {
+    cout << "\nErro: falha ao pesquisar o Quarto.\n";
+  }
+  else
+  {
+    cout << "\nID: " << q->id << "\nNumero: " << q->numero << "\nEspecificacao: " << q->especificacao << "\nStatus: " << q->status << "\n";
+  }
+
+  n0->status = "Em limpeza";
+
+  if (sys1->atualizarQuarto(*n0))
+  {
+    cout << "\nQuarto atualizado com sucesso!\n";
+    cout << "\nID: " << q->id << "\nNumero: " << q->numero << "\nEspecificacao: " << q->especificacao << "\nStatus: " << q->status << "\n";
+  }
+  else
+  {
+    cout << "\nErro: falha ao atualizar o Quarto.\n";
   }
 
   return 0;
