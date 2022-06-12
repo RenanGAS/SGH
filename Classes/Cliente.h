@@ -7,9 +7,22 @@ using namespace std;
 
 class Cliente
 {
-public: // Fazer getters/setters
-    int id;
-    string nome;
-    string cpf;
-    string tel;
+    int ID;
+    string Nome;
+    string CPF;
+    string Telefone;
+
+public:
+
+    int getID();
+    void setID(int);
+
+    string getNome();
+    void setNome(string);
+
+    string getCpf();
+    void setCpf(string);
+
+    string getTel();
+    void setTel(string);
 };
