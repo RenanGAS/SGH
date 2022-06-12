@@ -43,7 +43,7 @@ Cliente *ClienteDao::retrieve(string clienteCpf)
   return NULL;
 }
 
-bool ClienteDao::delete_(Cliente& cliente)
+bool ClienteDao::delete_(Cliente &cliente)
 {
   for (int i = 0; i < MAX_CLIENTES; i++)
   {
@@ -60,4 +60,9 @@ bool ClienteDao::delete_(Cliente& cliente)
     return false;
   }
   return false;
+}
+
+Cliente **ClienteDao::list()
+{
+  return this->clientes;
 }

@@ -16,4 +16,5 @@ public:
     Cliente *retrieve(string);
     bool update(Cliente &);
     bool delete_(Cliente &);
+    Cliente **list();
 };
