@@ -13,7 +13,7 @@ Cliente *Reserva::getCliente()
 {
     return this->cliente;
 }
-void Reserva::setCliente(Cliente *newCliente) 
+void Reserva::setCliente(Cliente *newCliente)
 {
     this->cliente = newCliente;
 }
@@ -54,6 +54,24 @@ void Reserva::setNumeroPessoas(int newNumeroPessoas)
     this->numeroPessoas = newNumeroPessoas;
 }
 
+string Reserva::getStatus()
+{
+    return this->status;
+}
+void Reserva::setStatus(string newStatus)
+{
+    this->status = newStatus;
+}
+
+float Reserva::getValorTotal()
+{
+    return this->valorTotal;
+}
+void Reserva::setValorTotal(float newValorTotal)
+{
+    this->valorTotal = newValorTotal;
+}
+
 float Reserva::getValorAPagar()
 {
     return this->valorAPagar;
@@ -63,7 +81,16 @@ void Reserva::setValorAPagar(float newValorAPagar)
     this->valorAPagar = newValorAPagar;
 }
 
+static string roundToString(float num)
+{
+    char str[40];
+ 
+    sprintf(str, "%.2f", num);
+ 
+    return str;
+}
+
 string Reserva::toStringReserva()
 {
-    return "\nID: "+ to_string(this->ID) + "\nCliente: " + this->cliente->getNome() + "\nQuarto: " + to_string(this->quarto->getNumero()) + "\nNumero de pessoas: "+ to_string(this->numeroPessoas) + "\nData de entrada: " + this->dataEntrada + + "\nData de saida: " + this->dataSaida + "\nValor a pagar: "+ to_string(this->valorAPagar) + "\n";
+    return "\nID: " + to_string(this->ID) + "\nCliente: " + this->cliente->getNome() + "\nQuarto: " + to_string(this->quarto->getNumero()) + "\nNumero de pessoas: " + to_string(this->numeroPessoas) + "\nData de entrada: " + this->dataEntrada + "\nData de saida: " + this->dataSaida + "\nStatus: " + this->status + "\nValor total: " + roundToString(this->valorTotal) + "\nValor a pagar: " + roundToString(this->valorAPagar) + "\n";
 }

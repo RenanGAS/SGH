@@ -1,7 +1,10 @@
 #pragma once
 
 #include <iostream>
+#include <iomanip>
+#include <cmath>
 #include <string>
+#include <ctime>
 #include "Cliente.h"
 #include "Quarto.h"
 
@@ -15,6 +18,8 @@ class Reserva
     string dataEntrada;
     string dataSaida;
     int numeroPessoas;
+    string status;
+    float valorTotal;
     float valorAPagar;
 
 public:
@@ -35,6 +40,12 @@ public:
 
     int getNumeroPessoas();
     void setNumeroPessoas(int);
+
+    string getStatus();
+    void setStatus(string);
+
+    float getValorTotal();
+    void setValorTotal(float);
 
     float getValorAPagar();
     void setValorAPagar(float);
