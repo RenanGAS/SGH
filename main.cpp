@@ -10,10 +10,11 @@ int main()
 {
   Sistema *sys1 = new Sistema();
 
-
-  //-----------------------------------------------------
-  //--------------- TESTE CLIENTE -----------------------
-  //-----------------------------------------------------
+  cout << "\n\n";
+  cout << "-----------------------------------------------------";
+  cout << "\n--------------- TESTE CLIENTE -----------------------";
+  cout << "\n-----------------------------------------------------";
+  cout << "\n";
 
   Cliente *c1 = sys1->pesquisarCliente("098.256.335-12");
 
@@ -74,10 +75,11 @@ int main()
     cout << "\nErro: falha ao cadastrar o Cliente.\n";
   }
 
-
-  //-----------------------------------------------------
-  //--------------- TESTE QUARTO ------------------------
-  //-----------------------------------------------------
+  cout << "\n\n";
+  cout << "-----------------------------------------------------";
+  cout << "\n---------------- TESTE QUARTO -----------------------";
+  cout << "\n-----------------------------------------------------";
+  cout << "\n";
 
   Quarto *n0 = new Quarto();
   n0->setID(idGeneratorWrapper("numero 0"));
@@ -132,6 +134,74 @@ int main()
   else
   {
     cout << "\nErro: falha ao cadastrar o Quarto.\n";
+  }
+
+  cout << "\n\n";
+  cout << "-----------------------------------------------------";
+  cout << "\n--------------- TESTE RESERVA -----------------------";
+  cout << "\n-----------------------------------------------------";
+  cout << "\n";
+
+  Reserva *r1 = new Reserva();
+  r1->setID(idGeneratorWrapper("reserva 1"));
+  r1->setCliente(c1);
+  r1->setQuarto(n0);
+  r1->setDataEntrada("18/06/2022");
+  r1->setDataSaida("22/06/2022");
+  r1->setNumeroPessoas(1);
+  r1->setStatus("Pendente");
+  r1->setValorTotal(90);
+  r1->setValorAPagar(90);
+
+  if (sys1->cadastrarReserva(*r1))
+  {
+    cout << "\nReserva cadastrada com sucesso!\n";
+  }
+  else
+  {
+    cout << "\nErro: falha ao cadastrar a Reserva.\n";
+  }
+
+  Reserva *re1 = sys1->pesquisarReserva(r1->getID());
+
+  if (re1 == NULL)
+  {
+    cout << "\nErro: falha ao pesquisar a Reserva.\n";
+  }
+  else
+  {
+    sys1->listarReservas();
+  }
+
+  Reserva *r2 = new Reserva();
+  r2->setID(idGeneratorWrapper("reserva 2"));
+  r2->setCliente(c2);
+  r2->setQuarto(n1);
+  r2->setDataEntrada("18/06/2022");
+  r2->setDataSaida("22/06/2022");
+  r2->setNumeroPessoas(1);
+  r2->setStatus("Pendente");
+  r2->setValorTotal(90);
+  r2->setValorAPagar(90);
+
+  if (sys1->cadastrarReserva(*r2))
+  {
+    cout << "\nReserva cadastrada com sucesso!\n";
+  }
+  else
+  {
+    cout << "\nErro: falha ao cadastrar a Reserva.\n";
+  }
+
+  Reserva *re2 = sys1->pesquisarReserva(r2->getID());
+
+  if (re2 == NULL)
+  {
+    cout << "\nErro: falha ao pesquisar a Reserva.\n";
+  }
+  else
+  {
+    sys1->listarReservas();
   }
 
   return 0;

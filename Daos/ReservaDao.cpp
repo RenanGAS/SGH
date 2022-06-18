@@ -26,7 +26,9 @@ bool ReservaDao::update(Reserva &reserva)
     reserva1->setDataEntrada(reserva.getDataEntrada());
     reserva1->setDataSaida(reserva.getDataSaida());
     reserva1->setNumeroPessoas(reserva.getNumeroPessoas());
+    reserva1->setStatus(reserva.getStatus());
     reserva1->setValorAPagar(reserva.getValorAPagar());
+    reserva1->setValorTotal(reserva.getValorTotal());
 
     return true;
 }
