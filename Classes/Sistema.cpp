@@ -43,3 +43,26 @@ void Sistema::listarQuartos()
 {
   mgrQuarto1->listar();
 }
+
+
+// Reserva
+
+bool Sistema::cadastrarReserva(Reserva &reserva)
+{
+  return mgrReserva1->cadastrar(reserva);
+}
+
+bool Sistema::atualizarReserva(Reserva &reserva)
+{
+  return mgrReserva1->atualizar(reserva);
+}
+
+Reserva *Sistema::pesquisarReserva(int id)
+{
+  return mgrReserva1->pesquisar(id);
+}
+
+void Sistema::listarReservas()
+{
+  mgrReserva1->listar();
+}
