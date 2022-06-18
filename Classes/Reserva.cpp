@@ -9,34 +9,61 @@ void Reserva::setID(int newID)
     this->ID = newID;
 }
 
-int Reserva::getCliente()
+Cliente *Reserva::getCliente()
 {
     return this->cliente;
 }
-void Reserva::setCliente(int newCliente) 
+void Reserva::setCliente(Cliente *newCliente) 
 {
     this->cliente = newCliente;
 }
 
-string Reserva::getEspecificacao() // TODO: Terminar de refatorar
+Quarto *Reserva::getQuarto()
 {
-    return this->Especificacao;
+    return this->quarto;
 }
-void Reserva::setEspecificacao(string newEspecificacao)
+void Reserva::setQuarto(Quarto *newQuarto)
 {
-    this->Especificacao = newEspecificacao;
+    this->quarto = newQuarto;
 }
 
-string Reserva::getStatus()
+string Reserva::getDataEntrada()
 {
-    return this->Status;
+    return this->dataEntrada;
 }
-void Reserva::setStatus(string newStatus)
+void Reserva::setDataEntrada(string newDataEntrada)
 {
-    this->Status = newStatus;
+    this->dataEntrada = newDataEntrada;
+}
+
+string Reserva::getDataSaida()
+{
+    return this->dataSaida;
+}
+void Reserva::setDataSaida(string newDataSaida)
+{
+    this->dataSaida = newDataSaida;
+}
+
+int Reserva::getNumeroPessoas()
+{
+    return this->numeroPessoas;
+}
+void Reserva::setNumeroPessoas(int newNumeroPessoas)
+{
+    this->numeroPessoas = newNumeroPessoas;
+}
+
+float Reserva::getValorAPagar()
+{
+    return this->valorAPagar;
+}
+void Reserva::setValorAPagar(float newValorAPagar)
+{
+    this->valorAPagar = newValorAPagar;
 }
 
 string Reserva::toStringReserva()
 {
-    return "\nID: "+ to_string(this->ID) + "\nCliente: " + this->cliente->getNome() + "\nEspecificacao: " + this->Especificacao + "\nStatus: " + this->Status + "\n";
+    return "\nID: "+ to_string(this->ID) + "\nCliente: " + this->cliente->getNome() + "\nQuarto: " + to_string(this->quarto->getNumero()) + "\nNumero de pessoas: "+ to_string(this->numeroPessoas) + "\nData de entrada: " + this->dataEntrada + + "\nData de saida: " + this->dataSaida + "\nValor a pagar: "+ to_string(this->valorAPagar) + "\n";
 }

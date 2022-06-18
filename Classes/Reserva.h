@@ -12,9 +12,10 @@ class Reserva
     int ID;
     Cliente *cliente;
     Quarto *quarto;
-    string DataEntrada;
-    string DataSaida;
-    int NumeroPessoas;
+    string dataEntrada;
+    string dataSaida;
+    int numeroPessoas;
+    float valorAPagar;
 
 public:
     int getID();
@@ -34,6 +35,9 @@ public:
 
     int getNumeroPessoas();
     void setNumeroPessoas(int);
+
+    float getValorAPagar();
+    void setValorAPagar(float);
 
     string toStringReserva();
 };
