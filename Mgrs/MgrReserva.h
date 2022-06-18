@@ -12,4 +12,6 @@ public:
     bool atualizar(Reserva &);
     Reserva *pesquisar(int);
     void listar();
+
+    // TODO: add specific methods
 };
