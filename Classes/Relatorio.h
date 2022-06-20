@@ -3,10 +3,7 @@
 #include <iostream>
 #include <string>
 
-#include "../Mgrs/MgrReserva.h"
-
 using namespace std;
-
 
 class Relatorio
 {
@@ -15,10 +12,6 @@ class Relatorio
     string dataFinal;
     int quantidadeReservas;
     float renda;
-    Reserva* reservas[MAX_RESERVAS];
-
-    int calcularReservas();
-    int calcularRenda();
 
 public:
     int getID();
@@ -31,6 +24,10 @@ public:
     void setDataFinal(string);
 
     int getQuantidadeReservas();
+    void setQuantidadeReservas(int);
 
     float getRenda();
+    void setRenda(float);
+
+    string toStringRelatorio();
 };
