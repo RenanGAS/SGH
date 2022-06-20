@@ -27,3 +27,8 @@ void MgrReserva::listar()
         }
     }
 }
+
+Reserva **MgrReserva::getListaReservas()
+{
+    return this->reservaDao->list();
+}

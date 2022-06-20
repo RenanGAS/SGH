@@ -12,4 +12,5 @@ public:
     bool atualizar(Reserva &);
     Reserva *pesquisar(int);
     void listar();
+    Reserva **getListaReservas();
 };
