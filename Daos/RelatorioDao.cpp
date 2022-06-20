@@ -64,3 +64,15 @@ Relatorio **RelatorioDao::list()
 {
     return this->relatorios;
 }
+
+string RelatorioDao::show(Relatorio &relatorio)
+{
+    Relatorio *relatorio1 = retrieve(relatorio.getID());
+
+    if (relatorio1 == NULL)
+    {
+        return "false";
+    }
+
+    return relatorio1->toStringRelatorio();
+}

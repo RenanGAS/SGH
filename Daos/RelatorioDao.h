@@ -17,4 +17,5 @@ public:
     bool update(Relatorio &);
     bool delete_(Relatorio &);
     Relatorio **list();
+    string show(Relatorio &);
 };
