@@ -3,23 +3,24 @@
 #include "../Classes/Relatorio.h"
 #include "../Daos/RelatorioDao.h"
 #include "../Dvos/RelatorioDvo.h"
-#include "../Daos/ReservaDao.h"
+#include "../Mgrs/MgrReserva.h"
 
 class MgrRelatorio
 {
     RelatorioDao *relatorioDao = new RelatorioDao();
     RelatorioDvo *relatorioDvo = new RelatorioDvo();
-    ReservaDao *reservaDao1 = new ReservaDao();
-    Reserva **reservas = reservaDao1->list();
+    MgrReserva *mgrReserva1 = new MgrReserva();
+    Reserva **reservasValidas = relatorioDvo->reservasValidas;
+    int countReservasValidas = relatorioDvo->countReservasV;
 
     int calcularReservas();
     float calcularRenda();
+    bool cadastrar(Relatorio &);
 
 public:
-    bool cadastrar(Relatorio &);
     bool atualizar(Relatorio &); // Corrige datas
     void listar();
 
-    bool gerar(Relatorio &);     // Verifica dados
-    bool imprimir(Relatorio &);  // Printa informações
+    bool gerar(Relatorio &);    // Verifica dados
+    bool imprimir(Relatorio &); // Printa informações
 };

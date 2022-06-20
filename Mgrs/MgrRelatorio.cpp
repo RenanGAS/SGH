@@ -2,10 +2,19 @@
 
 int MgrRelatorio::calcularReservas()
 {
+    return this->countReservasValidas;
 }
 
 float MgrRelatorio::calcularRenda()
 {
+    float rendaTotal = 0;
+
+    for (int i = 0; i < this->countReservasValidas; i++)
+    {
+        rendaTotal += reservasValidas[i]->getValorTotal();
+    }
+
+    return rendaTotal;
 }
 
 bool MgrRelatorio::cadastrar(Relatorio &relatorio)
@@ -36,6 +45,11 @@ bool MgrRelatorio::gerar(Relatorio &relatorio)
     relatorio.setQuantidadeReservas(calcularReservas());
     relatorio.setRenda(calcularRenda());
 
+    if (!(cadastrar(relatorio)))
+    {
+        return false;
+    }
+
     return true;
 }
 
@@ -46,7 +60,16 @@ bool MgrRelatorio::atualizar(Relatorio &relatorio)
 
 bool MgrRelatorio::imprimir(Relatorio &relatorio)
 {
-    relatorio.toStringRelatorio();
+    string strRelatorio = this->relatorioDao->show(relatorio);
+
+    int resultCmp = strRelatorio.compare("false");
+
+    if (resultCmp == 0)
+    {
+        return false;
+    }
+
+    cout << "\n" + strRelatorio + "\n";
 
     return true;
 }
