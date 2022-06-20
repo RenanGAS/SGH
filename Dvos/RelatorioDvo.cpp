@@ -32,6 +32,8 @@ bool RelatorioDvo::verificarDataInicio(string dataInicio)
 
         if ((dtInicioReserva->ano >= dtInicio->ano) && (dtInicioReserva->mes >= dtInicio->mes) && (dtInicioReserva->dia >= dtInicio->dia))
         {
+            this->reservasValidas[this->countReservasV] = reservas[i];
+            this->countReservasV++;
             return true;
         }
     }
@@ -41,6 +43,8 @@ bool RelatorioDvo::verificarDataInicio(string dataInicio)
 
 bool RelatorioDvo::verificarDataFinal(string dataFinal)
 {
+    // int k = 0;
+    // int notValid = 0;
     DATA *dtFinal = stringToData(dataFinal);
 
     for (size_t i = 0; i < MAX_RESERVAS; i++)
@@ -49,6 +53,20 @@ bool RelatorioDvo::verificarDataFinal(string dataFinal)
 
         if ((dtFinalReserva->ano <= dtFinal->ano) && (dtFinalReserva->mes <= dtFinal->mes) && (dtFinalReserva->dia <= dtFinal->dia))
         {
+            // for (Reserva *j = reservasValidas[k]; j != NULL; k++)
+            // {
+            //     if (reservas[i]->getID() != j->getID())
+            //     {
+            //         notValid = i;
+            //     }
+            //     else
+            //     {
+            //         notValid = -1;
+            //     }
+
+            //     k++;
+            // }
+
             return true;
         }
     }

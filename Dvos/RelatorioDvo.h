@@ -1,11 +1,11 @@
 #pragma once
 
 #include <string>
-#include "../Daos/ReservaDao.h"
+#include "../Mgrs/MgrReserva.h"
 using namespace std;
 
-
-typedef struct DATA{
+typedef struct DATA
+{
     int dia;
     int mes;
     int ano;
@@ -13,12 +13,15 @@ typedef struct DATA{
 
 class RelatorioDvo
 {
-    ReservaDao *reservaDao1 = new ReservaDao();
-    Reserva **reservas = reservaDao1->list();
+    MgrReserva *mgrReserva1 = new MgrReserva();
+    Reserva **reservas = mgrReserva1->getListaReservas();
+
     DATA *stringToData(string strData);
     bool verificarDataInicio(string dataInicio);
     bool verificarDataFinal(string dataFinal);
-    
+
 public:
+    Reserva **reservasValidas;
+    int countReservasV;
     bool verificarPeriodo(string dataInicio, string dataFinal);
 };
