@@ -9,8 +9,8 @@ class MgrRelatorio
     RelatorioDao *relatorioDao = new RelatorioDao();
     RelatorioDvo *relatorioDvo = new RelatorioDvo();
     MgrReserva *mgrReserva1 = new MgrReserva();
-    Reserva **reservasValidas = relatorioDvo->reservasValidas;
-    int countReservasValidas = relatorioDvo->countReservasV;
+    Reserva **reservasValidas = relatorioDvo->getReservasValidas();
+    int countReservasValidas = relatorioDvo->getCountReservasV();
 
     int calcularReservas();
     float calcularRenda();

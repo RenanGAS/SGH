@@ -93,3 +93,12 @@ bool RelatorioDvo::verificarPeriodo(string dataInicio, string dataFinal)
 
     return true;
 }
+
+Reserva **RelatorioDvo::getReservasValidas()
+{
+    return this->reservasValidas;
+}
+int RelatorioDvo::getCountReservasV()
+{
+    return this->countReservasV;
+}

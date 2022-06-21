@@ -16,12 +16,16 @@ class RelatorioDvo
     MgrReserva *mgrReserva1 = new MgrReserva();
     Reserva **reservas = mgrReserva1->getListaReservas();
 
+    Reserva **reservasValidas;
+    int countReservasV;
+
     DATA *stringToData(string strData);
     bool verificarDataInicio(string dataInicio);
     bool verificarDataFinal(string dataFinal);
 
 public:
-    Reserva **reservasValidas;
-    int countReservasV;
+    Reserva **getReservasValidas();
+    int getCountReservasV();
     bool verificarPeriodo(string dataInicio, string dataFinal);
+
 };
