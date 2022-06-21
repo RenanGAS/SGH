@@ -15,6 +15,8 @@ public:
     bool create(Reserva &);
     Reserva *retrieve(int);
     bool update(Reserva &);
+    bool update(Reserva &, float);
+    bool update(Reserva &, string);
     bool delete_(Reserva &);
     Reserva **list();
 };

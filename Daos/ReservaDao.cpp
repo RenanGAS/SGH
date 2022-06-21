@@ -33,6 +33,48 @@ bool ReservaDao::update(Reserva &reserva)
     return true;
 }
 
+bool ReservaDao::update(Reserva &reserva, float valor)
+{
+    Reserva *reserva1 = retrieve(reserva.getID());
+
+    if (reserva1 == NULL)
+    {
+        return false;
+    }
+
+    reserva1->setCliente(reserva.getCliente());
+    reserva1->setQuarto(reserva.getQuarto());
+    reserva1->setDataEntrada(reserva.getDataEntrada());
+    reserva1->setDataSaida(reserva.getDataSaida());
+    reserva1->setNumeroPessoas(reserva.getNumeroPessoas());
+    reserva1->setStatus(reserva.getStatus());
+    reserva1->setValorAPagar(reserva.getValorAPagar() - valor);
+    reserva1->setValorTotal(reserva.getValorTotal());
+
+    return true;
+}
+
+bool ReservaDao::update(Reserva &reserva, string dataSaida)
+{
+    Reserva *reserva1 = retrieve(reserva.getID());
+
+    if (reserva1 == NULL)
+    {
+        return false;
+    }
+
+    reserva1->setCliente(reserva.getCliente());
+    reserva1->setQuarto(reserva.getQuarto());
+    reserva1->setDataEntrada(reserva.getDataEntrada());
+    reserva1->setDataSaida(dataSaida);
+    reserva1->setNumeroPessoas(reserva.getNumeroPessoas());
+    reserva1->setStatus(reserva.getStatus());
+    reserva1->setValorAPagar(reserva.getValorAPagar());
+    reserva1->setValorTotal(reserva.getValorTotal());
+
+    return true;
+}
+
 Reserva *ReservaDao::retrieve(int reservaID)
 {
     for (int i = 0; i < this->reservasCount; i++)
