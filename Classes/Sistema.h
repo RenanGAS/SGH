@@ -29,6 +29,8 @@ public:
   bool atualizarReserva(Reserva &);
   Reserva *pesquisarReserva(int);
   void listarReservas();
+  bool pagarReserva(Reserva &, float valor);
+  bool estenderReserva(Reserva &, string dataSaida);
 
   bool atualizarRelatorio(Relatorio &); 
   void listarRelatorio();

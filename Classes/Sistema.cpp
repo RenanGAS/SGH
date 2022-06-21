@@ -66,6 +66,16 @@ void Sistema::listarReservas()
   return mgrReserva1->listar();
 }
 
+bool Sistema::pagarReserva(Reserva &reserva, float valor)
+{
+  return mgrReserva1->pagar(reserva, valor);
+}
+
+bool Sistema::estenderReserva(Reserva &reserva, string dataSaida)
+{
+  return mgrReserva1->estender(reserva, dataSaida);
+}
+
 // Relatorio
 
 bool Sistema::atualizarRelatorio(Relatorio &relatorio)
