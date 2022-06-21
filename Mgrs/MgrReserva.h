@@ -11,4 +11,6 @@ public:
     Reserva *pesquisar(int);
     void listar();
     Reserva **getListaReservas();
+    bool pagar(Reserva &, float valor);
+    bool estender(Reserva &, string dataSaida);
 };

@@ -32,3 +32,13 @@ Reserva **MgrReserva::getListaReservas()
 {
     return this->reservaDao->list();
 }
+
+bool MgrReserva::pagar(Reserva &reserva, float valor)
+{
+    return this->reservaDao->update(reserva, valor);
+}
+
+bool MgrReserva::estender(Reserva &reserva, string dataSaida)
+{
+    return this->reservaDao->update(reserva, dataSaida);
+}
