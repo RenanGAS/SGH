@@ -3,6 +3,7 @@
 #include "../Mgrs/MgrCliente.h"
 #include "../Mgrs/MgrQuarto.h"
 #include "../Mgrs/MgrReserva.h"
+#include "../Mgrs/MgrRelatorio.h"
 
 class Sistema
 {
@@ -11,6 +12,7 @@ class Sistema
   MgrCliente *mgrCliente1 = new MgrCliente();
   MgrQuarto *mgrQuarto1 = new MgrQuarto();
   MgrReserva *mgrReserva1 = new MgrReserva();
+  MgrRelatorio *mgrRelatorio1 = new MgrRelatorio();
 
 public:
   bool cadastrarCliente(Cliente &);
@@ -27,4 +29,9 @@ public:
   bool atualizarReserva(Reserva &);
   Reserva *pesquisarReserva(int);
   void listarReservas();
+
+  bool atualizarRelatorio(Relatorio &); 
+  void listarRelatorio();
+  bool gerarRelatorio(Relatorio &);   
+  bool imprimirRelatorio(Relatorio &);
 };

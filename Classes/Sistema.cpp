@@ -19,7 +19,7 @@ Cliente *Sistema::pesquisarCliente(string Nome)
 
 void Sistema::listarClientes()
 {
-  mgrCliente1->listar();
+  return mgrCliente1->listar();
 }
 
 // Quarto
@@ -41,9 +41,8 @@ Quarto *Sistema::pesquisarQuarto(int numero)
 
 void Sistema::listarQuartos()
 {
-  mgrQuarto1->listar();
+  return mgrQuarto1->listar();
 }
-
 
 // Reserva
 
@@ -64,5 +63,27 @@ Reserva *Sistema::pesquisarReserva(int id)
 
 void Sistema::listarReservas()
 {
-  mgrReserva1->listar();
+  return mgrReserva1->listar();
+}
+
+// Relatorio
+
+bool Sistema::atualizarRelatorio(Relatorio &relatorio)
+{
+  return mgrRelatorio1->atualizar(relatorio);
+}
+
+void Sistema::listarRelatorio()
+{
+  return mgrRelatorio1->listar();
+}
+
+bool Sistema::gerarRelatorio(Relatorio &relatorio)
+{
+  return mgrRelatorio1->gerar(relatorio);
+}
+
+bool Sistema::imprimirRelatorio(Relatorio &relatorio)
+{
+  return mgrRelatorio1->imprimir(relatorio);
 }
