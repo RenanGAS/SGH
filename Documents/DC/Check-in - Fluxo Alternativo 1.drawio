@@ -1,1 +1,136 @@
-<mxfile host="app.diagrams.net" modified="2022-06-01T18:29:00.661Z" agent="5.0 (X11)" etag="tsVa98Wj_hWwApV2Klm0" version="18.0.7"><diagram id="ZzfmP2RD6eanzWZvCcLj" name="Page-1">7VpNc6M4EP01rsoe4kISYHx0IMlM1e7WzOYws0cFZFs1GHkFHjv761eAxIdE4piNGVfIJaFbogX9+rVabSbI3xzuOd6u/2ARiSfQig4TFEwgnNtQ/M0VT6XC8axSseI0KlWgVjzQf4lUqmk7GpG0NTFjLM7otq0MWZKQMGvpMOds3562ZHF71S1eEUPxEOLY1H6jUbYutR6c1fpPhK7WamXgzsuRDVaT5ZukaxyxfUOFbifI54xl5dXm4JM4953yS3nf3TOj1YNxkmSvuWHPXfD4mPz+uPzr66db6vmBdX8trfzE8U6+8AS6sbB3s2TCrHjq7Em6wv1nx9TAdVoAtRATgLcVWN/U4+JqJf8XhnaVAi38mIqnJWpIPOxOny505dJKDVtPATnbJRHJ38kSw/s1zcjDFof56F5EoNCts00sJJA/K41jn8WMF/eiu7tg7rqV1abvlCMIz8ihoZK+vCdsQzL+JKbIUVvCKuMaKZj3dZQApVs3IsSVOiwDc1VZrrETFxK+E6CEw0K5yIjA4b2AOb80NNGwaD7QNCMb/B6xdGfOL8bS7sBSc57g0iLfrYSUsIS0ndX2bA6C3CeBJ2RyoNn3fGzqSOlvOTO/Dg5N4UkKz7o5ZTsekuMbBola26YJRsPZToevlY6TGGf0Z3uz7QJArvCF0SL6VXnRhrqSlYXydeRNzb1RswMszRDSDGWYr0hmGCrCoXrr/hHiGBEiVvtTmL36zQgVQYOsHR9pxtkPougk46fJMKnCMV0lQgzztC30NzmpqKh1FnJgQ6MoX6aTvS9H4f8hrnK6aybdeUfs6Ni8GU/dQXgKmiytONvNU+FM/vS9KTTuysX6tkJ6M36X8X682riQPIA0/iKvZyLQDRkZ5cyJYHbeEKzCaQpqRR5S19bUsuCRqCqkL4RT8ZZ5/ng51I6GELqoEHIs+21CyEF6/TFsCHlGCMGyIKTJkvEN5gLBiY8mi4BF7KopjGGvUaOvKPirjWaQzUc1PBq4gSkokdtyFu445j6OcA7AVV4ajAgtxwFttOYdaNmDomU2TgRaCq8ARywNmOx2jKKGq5GaOu30h0yswHw+JFbm+QtMZU78LHNigdiYgBIYtCnVUXwDb1BKmYegl2qfMMZpSsNTyp9n3XYhJYh+mnXsfhWIcSrW7Jy5AAGnnaPeIZA21KoLu2ctabtHDJ0byvOeR1Lx+JkZB4X6jsbKiFhBSi8eOC4EfDDTipW+BwkIjhg6N/jmSWJkPPaMtkLPjKwbsuHAKXn+weNTwZ9pudfVMXst+IYhd1jwYcfJst0RKDrNIztTVl8Y6J2+1jnFM8PrbAUwNM+UI8u3Rt0E3qpu0g2dm3LQgBKq5oAIUboUPOABTbcsoY80phGOyNXXnUiXY2rCORoFbeQaFISDtgpg18/uo6KgZ2DSk4KGoYHb4Gq3blGw6vpEbe4FrCTfmDpAOvucrqbqzFLtvGH4d1oP6KNOFeqZ1u5x+h5SdENGwXtmxiKz/kElX32chMJJG4EAC5i/JuGPa5qMiaxGu7aLrOpXkkGoiswS54OqJ7aG7L71rd4aMgz1pqoQ60+Sy+n1d93o9j8=</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-06-21T14:28:31.119Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.0.0 Safari/537.36" etag="rpKNYpqjAyGYUHJkXmS2" version="20.0.1" type="github">
+  <diagram id="ZzfmP2RD6eanzWZvCcLj" name="Page-1">
+    <mxGraphModel dx="1422" dy="636" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ebUMO_MOzckFrmGXB2Er-1" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;u&gt;:Sistema&lt;/u&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFD966;" vertex="1" parent="1">
+          <mxGeometry x="40" y="320" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ebUMO_MOzckFrmGXB2Er-2" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;u&gt;:MgrCliente&lt;/u&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFD966;" vertex="1" parent="1">
+          <mxGeometry x="490" y="320" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ebUMO_MOzckFrmGXB2Er-3" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;u&gt;:DaoCliente&lt;/u&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFD966;" vertex="1" parent="1">
+          <mxGeometry x="490" y="496.5" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ebUMO_MOzckFrmGXB2Er-4" value="" style="endArrow=none;html=1;rounded=0;fontSize=18;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="ebUMO_MOzckFrmGXB2Er-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="90" y="290" as="sourcePoint" />
+            <mxPoint x="100" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ebUMO_MOzckFrmGXB2Er-5" value="getCpf()" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry y="260" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ebUMO_MOzckFrmGXB2Er-6" value="" style="endArrow=none;html=1;rounded=0;fontSize=18;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="ebUMO_MOzckFrmGXB2Er-1" target="ebUMO_MOzckFrmGXB2Er-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="300" y="380" as="sourcePoint" />
+            <mxPoint x="300" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ebUMO_MOzckFrmGXB2Er-7" value="" style="endArrow=none;html=1;rounded=0;fontSize=18;entryX=0.118;entryY=-0.002;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="ebUMO_MOzckFrmGXB2Er-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="504" y="380" as="sourcePoint" />
+            <mxPoint x="530" y="670" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ebUMO_MOzckFrmGXB2Er-8" value="2: cadastrarReserva(Reserva *)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="140" y="396" width="270" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ebUMO_MOzckFrmGXB2Er-9" value="1.1: pesquisar(cpf)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="510" y="396" width="171" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ebUMO_MOzckFrmGXB2Er-10" value="1.2: dadosCliente()" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="219" y="360" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ebUMO_MOzckFrmGXB2Er-11" value="" style="endArrow=classic;html=1;rounded=0;fontSize=18;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="90" y="254" as="sourcePoint" />
+            <mxPoint x="90" y="294" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ebUMO_MOzckFrmGXB2Er-12" value="" style="endArrow=classic;html=1;rounded=0;fontSize=18;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="130" y="390" as="sourcePoint" />
+            <mxPoint x="130" y="430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ebUMO_MOzckFrmGXB2Er-13" value="" style="endArrow=none;html=1;rounded=0;fontSize=18;startArrow=classic;startFill=1;endFill=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="171" y="380" as="sourcePoint" />
+            <mxPoint x="211" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ebUMO_MOzckFrmGXB2Er-14" value="" style="endArrow=classic;html=1;rounded=0;fontSize=18;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="690" y="390" as="sourcePoint" />
+            <mxPoint x="690" y="430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ebUMO_MOzckFrmGXB2Er-15" value="" style="endArrow=none;html=1;rounded=0;fontSize=18;startArrow=classic;startFill=1;endFill=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="690" y="445.5" as="sourcePoint" />
+            <mxPoint x="690" y="485.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ebUMO_MOzckFrmGXB2Er-16" value="1: pesquisarCliente(cpf)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="199" y="310" width="218" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ebUMO_MOzckFrmGXB2Er-17" value="" style="endArrow=classic;html=1;rounded=0;fontSize=18;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="429" y="330" as="sourcePoint" />
+            <mxPoint x="469" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ebUMO_MOzckFrmGXB2Er-18" value="2.1: cadastrar(Reserva &amp;amp;)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="140" y="570" width="210" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ebUMO_MOzckFrmGXB2Er-19" value="" style="endArrow=classic;html=1;rounded=0;fontSize=18;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="130" y="570" as="sourcePoint" />
+            <mxPoint x="130" y="610" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ebUMO_MOzckFrmGXB2Er-20" value="2.1.1: create(Reserva &amp;amp;)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="140" y="640" width="212.62" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ebUMO_MOzckFrmGXB2Er-21" value="" style="endArrow=none;html=1;rounded=0;fontSize=18;startArrow=classic;startFill=1;endFill=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="130" y="630" as="sourcePoint" />
+            <mxPoint x="130" y="670" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ebUMO_MOzckFrmGXB2Er-22" value="1.1.1: retrieve(cpf)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="510" y="451.5" width="159" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ebUMO_MOzckFrmGXB2Er-23" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;u&gt;:MgrReserva&lt;/u&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFD966;" vertex="1" parent="1">
+          <mxGeometry x="40" y="496.5" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ebUMO_MOzckFrmGXB2Er-24" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;u&gt;:DaoReserva&lt;/u&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFD966;" vertex="1" parent="1">
+          <mxGeometry x="40" y="680" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ebUMO_MOzckFrmGXB2Er-25" value="" style="endArrow=none;html=1;rounded=0;fontSize=18;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="ebUMO_MOzckFrmGXB2Er-1" target="ebUMO_MOzckFrmGXB2Er-23">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="10" y="720" as="sourcePoint" />
+            <mxPoint x="100" y="540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ebUMO_MOzckFrmGXB2Er-26" value="" style="endArrow=none;html=1;rounded=0;fontSize=18;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="ebUMO_MOzckFrmGXB2Er-23" target="ebUMO_MOzckFrmGXB2Er-24">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="100" y="570" as="sourcePoint" />
+            <mxPoint x="100" y="686.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ebUMO_MOzckFrmGXB2Er-27" value="2.2: vetoCadastro()" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="140" y="451.5" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ebUMO_MOzckFrmGXB2Er-28" value="" style="endArrow=none;html=1;rounded=0;fontSize=18;startArrow=classic;startFill=1;endFill=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="130" y="446.5" as="sourcePoint" />
+            <mxPoint x="130" y="486.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
