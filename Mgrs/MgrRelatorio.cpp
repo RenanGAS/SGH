@@ -56,6 +56,8 @@ bool MgrRelatorio::gerar(Relatorio &relatorio)
 bool MgrRelatorio::atualizar(Relatorio &relatorio)
 {
     this->relatorioDao->update(relatorio);
+
+    return true;
 }
 
 bool MgrRelatorio::imprimir(Relatorio &relatorio)

@@ -1,6 +1,5 @@
 #pragma once
 
-#include "../Classes/Relatorio.h"
 #include "../Daos/RelatorioDao.h"
 #include "../Dvos/RelatorioDvo.h"
 #include "../Mgrs/MgrReserva.h"

@@ -1,8 +1,6 @@
 #pragma once
 
-#include "../Classes/Reserva.h"
 #include "../Daos/ReservaDao.h"
-
 
 class MgrReserva
 {

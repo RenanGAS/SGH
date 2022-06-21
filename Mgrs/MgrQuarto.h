@@ -1,8 +1,6 @@
 #pragma once
 
-#include "../Classes/Quarto.h"
 #include "../Daos/QuartoDao.h"
-
 
 class MgrQuarto
 {
